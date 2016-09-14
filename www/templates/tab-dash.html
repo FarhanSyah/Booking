@@ -9,7 +9,7 @@
       <h4 class="">Tanggal</h4>
         <label class="item item-input" ion-datetime-picker ng-model="datetimeValue">
             <i class="icon ion-android-calendar"></i>
-            <input type="text" placeholder="{{datetimeValue| date: 'yyyy-MM-dd H:mm:ss'}}">
+            {{datetimeValue| date: 'yyyy-MM-dd H:mm:ss'}}
         </label>
       <h4 class="">Cari Venue</h4>
       <ion-list>
