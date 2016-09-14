@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+/* .bar-up {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-color: grey;
+} */
+.item-select {
+    /*width: 100%;*/
+}
+.item-select select{
+    left: 0;
+}

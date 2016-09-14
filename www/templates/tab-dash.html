@@ -1,0 +1,26 @@
+<ion-view view-title="Booking" id="tab-dash">
+  <ion-content class="padding">
+    <form class="list">
+      <h4 class="">Search</h4>
+      <label class="item item-input">  
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search">
+      </label>
+      <h4 class="">Tanggal</h4>
+        <label class="item item-input" ion-datetime-picker ng-model="datetimeValue">
+            <i class="icon ion-android-calendar"></i>
+            <input type="text" placeholder="{{datetimeValue| date: 'yyyy-MM-dd H:mm:ss'}}">
+        </label>
+      <h4 class="">Cari Venue</h4>
+      <ion-list>
+        <label class="item item-input item-select">
+          <div class="input-label">
+           asdasdas
+          </div>
+          <select ng-model="selectedItem" ng-options="venue.name for venue in venues">
+          </select>
+        </label>
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-view>
