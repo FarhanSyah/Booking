@@ -7,7 +7,11 @@
 } */
 .item-select {
     /*width: 100%;*/
+    height: 50px;
 }
 .item-select select{
     left: 0;
+}
+.input-calendar {
+    height: 50px;
 }

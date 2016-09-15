@@ -7,7 +7,7 @@
         <input type="text" placeholder="Search">
       </label>
       <h4 class="">Tanggal</h4>
-        <label class="item item-input" ion-datetime-picker ng-model="datetimeValue">
+        <label class="item item-input input-calendar" ion-datetime-picker ng-model="datetimeValue">
             <i class="icon ion-android-calendar"></i>
             {{datetimeValue| date: 'yyyy-MM-dd H:mm:ss'}}
         </label>
@@ -15,7 +15,6 @@
       <ion-list>
         <label class="item item-input item-select">
           <div class="input-label">
-           asdasdas
           </div>
           <select ng-model="selectedItem" ng-options="venue.name for venue in venues">
           </select>
