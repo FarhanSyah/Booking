@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ksSwiper'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -50,6 +50,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('tab.search-venue', {
+    url: '/dash/venue',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/search-venue.html',
+        controller: 'SearchVenuesCtrl'
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/tab/dash');
 
 })
@@ -58,4 +67,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   // note that you can also chain configs
   $ionicConfigProvider.tabs.position('bottom');
+  $ionicConfigProvider.backButton.previousTitleText(false);
+  $ionicConfigProvider.backButton.text('');
 });
