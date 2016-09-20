@@ -7,9 +7,9 @@
         <input type="text" placeholder="Ketik nama area atau nama venue">
       </label>
       <h4 class="">Tanggal</h4>
-        <label class="item item-input input-calendar" ion-datetime-picker ng-model="datetimeValue">
+        <label class="item item-input input-calendar" ng-click="openDatePicker()" >
             <i class="icon ion-android-calendar"></i>
-            {{datetimeValue| date: 'yyyy-MM-dd H:mm:ss'}}
+            {{ dateval.text | date: 'dd-MM-yyyy'}}
         </label>
       <h4 class="">Cari Venue</h4>
       <ion-list>
