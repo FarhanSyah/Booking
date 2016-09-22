@@ -1,0 +1,13 @@
+<ion-view view-title="Booking" id="tab-dash">
+  <ion-content class="padding">
+    <form>
+    <div class="list card" ng-repeat="venue in venues">
+        <a class="item item-thumbnail-left fit-thumbnail" href="#">
+          <img src="{{venue.img}}">
+          <h2>{{venue.name}}</h2>
+          <p>Nine Inch Nails</p>
+        </a>
+    </div>
+    </form>
+  </ion-content>
+</ion-view>

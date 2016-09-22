@@ -9,3 +9,12 @@
 .button {
     background-color: #ebebeb;
 }
+.ionic_datepicker_modal .header, .ionic_datepicker_modal .footer {
+   background-color: #387ef5 !important;
+}
+.ionic_datepicker_modal .selected_date {
+  background-color: #387ef5 !important;
+}
+.fit-thumbnail {
+    object-fit : cover;
+}

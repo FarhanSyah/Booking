@@ -4,7 +4,7 @@
       <h4 class="">Lokasi</h4>
       <label class="item item-input">  
         <i class="icon ion-search placeholder-icon"></i>
-        <input type="text" placeholder="Ketik nama area atau nama venue">
+        <input type="text" placeholder="Ketik nama area atau nama venue" ng-model="search">
       </label>
       <h4 class="">Tanggal</h4>
         <label class="item item-input input-calendar" ng-click="openDatePicker()" >
@@ -21,6 +21,9 @@
           </select>
         </label>
       </ion-list>
+      <a class="button button-positive" href="#/tab/dash/venue/list/{{search}}">
+        Search
+      </a>
     </form>
   </ion-content>
 </ion-view>
