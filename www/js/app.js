@@ -59,10 +59,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ksSwiper'])
       }
     }
   })
+  .state('tab.venues-list', {
+    url: '/dash/venue/list/:search',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/venues-list.html',
+        controller: 'VenuesListCtrl'
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/tab/dash');
 
 })
-.config(function($ionicConfigProvider) {
+.config(function($ionicConfigProvider, ionicDatePickerProvider) {
   // $ionicConfigProvider.views.maxCache(5);
 
   // note that you can also chain configs

@@ -17,6 +17,11 @@ angular.module('starter.controllers', ['ionic-datepicker'])
     };
 })
 .controller('AccountCtrl', function($scope ) {})
+.controller('VenuesListCtrl', ['$scope', '$stateParams', '$filter', function($scope , $stateParams, $filter) {
+    var venues    = [{img: 'img/port1.jpg', name: 'Hotel Bintang Lima'},{img: 'img/port2.jpg', name: 'Hotel Bintang Empat'}];
+    
+    $scope.venues = $filter('filter')(venues, $stateParams.search);
+}])
 .controller('SearchVenuesCtrl', function($scope, ionicDatePicker) {
     $scope.venues = [{name: 'one', age: 30 },{ name: 'two', age: 27 },{ name: 'three', age: 50 }];
     // $scope.selectedItem = $scope.venues[0];
