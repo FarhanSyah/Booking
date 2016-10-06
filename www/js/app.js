@@ -68,6 +68,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ksSwiper'])
       }
     }
   })
+  .state('tab.venues-detail', {
+    url: '/dash/venue/:id/details',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/detail-venue.html',
+        controller: 'VenueDetailCtrl'
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/tab/dash');
 
 })

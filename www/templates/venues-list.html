@@ -2,10 +2,13 @@
   <ion-content class="padding">
     <form>
     <div class="list card" ng-repeat="venue in venues">
-        <a class="item item-thumbnail-left fit-thumbnail" href="#">
-          <img src="{{venue.img}}">
+        <a class="item item-thumbnail-left" href="#/tab/dash/venue/{{venue.id}}/details">
+          <img src="{{venue.img}}" class="fit-thumbnail">
           <h2>{{venue.name}}</h2>
-          <p>Nine Inch Nails</p>
+          <img src="img/5-star.jpg" width="50px">
+          <p>Rating {{venue.rating}}/10</p>
+          <hr>
+          <p>Rp.{{venue.price}}</p>
         </a>
     </div>
     </form>

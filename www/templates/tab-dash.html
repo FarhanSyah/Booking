@@ -1,10 +1,21 @@
 <ion-view view-title="Booking" id="tab-dash">
   <ion-content style="background-color: #f8f8f8;">
-    <ks-swiper-container initial-slide="1" speed="2000" loop="true" pagination-is-active="true" pagination-clickable="false" autoplay="2000">
+    <!-- <ks-swiper-container initial-slide="1" speed="2000" loop="true" pagination-is-active="true" pagination-clickable="false" autoplay="2000">
         <ks-swiper-slide class="swiper-slide" ng-repeat="s in [1,2,3]">
             <img ng-src="img/unsplash{{s}}.png" width="20%">
         </ks-swiper-slide>
-    </ks-swiper-container>
+    </ks-swiper-container> -->
+    <ion-slide-box does-continue="true" slide-interval="3000" auto-play="true">
+      <ion-slide>
+        <div class="box blue"><h1>BLUE</h1></div>
+      </ion-slide>
+      <ion-slide>
+        <div><img ng-src="img/unsplash1.png" width="100%"></div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box pink"><h1>PINK</h1></div>
+      </ion-slide>
+    </ion-slide-box>
     <div class="button-bar" style="padding-left: 10px; padding-right: 10px;">
       <a class="button icon-left ion-location" href="#/tab/dash/venue">Search Venue</a>
     </div>
