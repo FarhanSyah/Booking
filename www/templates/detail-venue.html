@@ -1,0 +1,21 @@
+<ion-view view-title="Booking" id="tab-dash">
+  <ion-content>
+    <ion-slide-box does-continue="true" slide-interval="3000" auto-play="true">
+      <ion-slide ng-repeat="details in venue">
+        <div class="box blue"><img ng-src="{{details.img}}" width="100%"></div>
+      </ion-slide>
+    </ion-slide-box>
+    <ion-list>
+      <div>
+        <ion-item class="item-stable" ng-click="toggleGroup()" ng-class="{active: groups.show}">
+          <i class="icon" ng-class="groups.show ? 'ion-minus' : 'ion-plus'"></i>
+          &nbsp;
+          {{groups.name}}
+        </ion-item>
+        <ion-item class="item-accordion" ng-repeat="item in groups.items" ng-show="groups.show">
+          {{item}}
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

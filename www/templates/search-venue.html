@@ -1,0 +1,29 @@
+<ion-view view-title="Booking" id="tab-dash">
+  <ion-content class="padding">
+    <form class="list">
+      <h4 class="">Lokasi</h4>
+      <label class="item item-input">  
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Ketik nama area atau nama venue" ng-model="search">
+      </label>
+      <h4 class="">Tanggal</h4>
+        <label class="item item-input input-calendar" ng-click="openDatePicker()" >
+            <i class="icon ion-android-calendar"></i>
+            {{ dateval.text | date: 'dd-MM-yyyy'}}
+        </label>
+      <h4 class="">Cari Venue</h4>
+      <ion-list>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            <i class="icon ion-android-checkbox-outline"></i>
+          </div>
+          <select ng-model="selectedItem" ng-options="venue.name for venue in venues">
+          </select>
+        </label>
+      </ion-list>
+      <a class="button button-positive" href="#/tab/dash/venue/list/{{search}}">
+        Search
+      </a>
+    </form>
+  </ion-content>
+</ion-view>

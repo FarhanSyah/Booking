@@ -1,17 +1,39 @@
 /* Empty. Add your own CSS if you like */
-/* .bar-up {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    background-color: grey;
-} */
 .item-select {
     /*width: 100%;*/
     height: 50px;
 }
-.item-select select{
-    left: 0;
-}
 .input-calendar {
     height: 50px;
+}
+.button {
+    background-color: #ebebeb;
+}
+.ionic_datepicker_modal .header, .ionic_datepicker_modal .footer {
+   background-color: #387ef5 !important;
+}
+.ionic_datepicker_modal .selected_date {
+  background-color: #387ef5 !important;
+}
+.fit-thumbnail {
+    object-fit : cover;
+    max-height: 100% !important;
+    padding-bottom: 20px;
+}
+hr {
+    border-color: #f5f5f5;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
 }
